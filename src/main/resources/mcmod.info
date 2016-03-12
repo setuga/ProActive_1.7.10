@@ -1,0 +1,16 @@
+[
+{
+  "modid": "proactive",
+  "name": "ProActive Mod",
+  "description": "I Love, You Love, Proactive.",
+  "version": "1.0.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["shu3"],
+  "credits": "shu3さんが作ったものを1.7.10で動くようにしたものです。",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
