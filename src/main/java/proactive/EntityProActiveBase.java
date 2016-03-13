@@ -56,11 +56,12 @@ abstract class EntityProActiveBase extends EntityThrowable
         return list;
     }
 
-    protected List<int[]> removableBlocks(World world)
+    List<int[]> removableBlocks(World world)
     {
         return null;
     }
 
+    @Override
     protected void onImpact(MovingObjectPosition movingobjectposition)
     {
         for (int j = 0; j < 8; j++)
@@ -87,8 +88,6 @@ abstract class EntityProActiveBase extends EntityThrowable
             Block block = worldObj.getBlock(x, y, z);
             if (block != null)
             {
-//                System.out.println("Proactive removeBlocks(): x=" + x + ",y=" + y + ",z=" + z);
-                int metadata = this.worldObj.getBlockMetadata(x, y, z);
                 if (!player.theItemInWorldManager.tryHarvestBlock(x, y, z))
                 {
                     this.worldObj.setBlockToAir(x, y, z);
