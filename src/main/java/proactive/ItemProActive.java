@@ -16,6 +16,7 @@ class ItemProActive extends Item
         setTextureName(ProActive.ID + ":" + "ProActive");
     }
 
+    @Override
     public void onPlayerStoppedUsing(ItemStack itemStack, World world, EntityPlayer entityPlayer, int itemInUseCount)
     {
         if (!entityPlayer.capabilities.isCreativeMode)
@@ -40,19 +41,21 @@ class ItemProActive extends Item
         }
     }
 
-    public void throwItem(World world, EntityPlayer entityPlayer, float f)
+    void throwItem(World world, EntityPlayer entityPlayer, float f)
     {
         EntityProActive proActive = new EntityProActive(world, entityPlayer);
         proActive.setThrowableHeading(proActive.motionX, proActive.motionY, proActive.motionZ, f * 2.0F, 1.0F);
         world.spawnEntityInWorld(proActive);
     }
 
+    @Override
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer entityPlayer)
     {
         entityPlayer.setItemInUse(itemStack, getMaxItemUseDuration(itemStack));
         return itemStack;
     }
 
+    @Override
     public int getMaxItemUseDuration(ItemStack itemStack)
     {
         return 72000;
