@@ -42,13 +42,9 @@ abstract class EntityProActiveBase extends EntityThrowable
             {
                 for (int z = minz; z < minz + 16; z++)
                 {
-                    if (world.blockExists(x, y, z))
+                    if (!world.isAirBlock(x, y, z))
                     {
-                        Block block = world.getBlock(x, y, z);
-                        if (block != null)
-                        {
-                            list.add(new int[]{x, y, z});
-                        }
+                        list.add(new int[]{x, y, z});
                     }
                 }
             }
