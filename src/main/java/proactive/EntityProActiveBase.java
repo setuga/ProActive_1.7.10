@@ -65,7 +65,7 @@ abstract class EntityProActiveBase extends EntityThrowable
     {
         for (int j = 0; j < 8; j++)
         {
-            this.worldObj.spawnParticle("snowball", this.posX, this.posY, this.posZ, 0.0D, 0.0D, 0.0D);
+            this.worldObj.spawnParticle("snowballpoof", this.posX, this.posY, this.posZ, 0.0D, 0.0D, 0.0D);
         }
         if (!this.worldObj.isRemote)
         {
