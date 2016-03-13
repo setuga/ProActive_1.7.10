@@ -13,7 +13,7 @@ class ItemWaruActive extends ItemProActive
     }
 
     @Override
-    public void throwItem(World world, EntityPlayer entityPlayer, float f)
+    void throwItem(World world, EntityPlayer entityPlayer, float f)
     {
         EntityWaruActive waruActive = new EntityWaruActive(world, entityPlayer);
         waruActive.setThrowableHeading(waruActive.motionX, waruActive.motionY, waruActive.motionZ, f * 2.0F, 1.0F);
