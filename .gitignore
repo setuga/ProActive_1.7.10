@@ -4,7 +4,6 @@ build
 eclipse
 gradle
 out
-*.txt
 build.gradle
 *.iml
 gradlew
