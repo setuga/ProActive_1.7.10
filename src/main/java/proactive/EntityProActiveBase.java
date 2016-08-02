@@ -73,7 +73,7 @@ abstract class EntityProActiveBase extends EntityThrowable
 
     private void removeBlocks()
     {
-        EntityPlayerMP player = (EntityPlayerMP)getThrower();
+        EntityPlayerMP player = (EntityPlayerMP) getThrower();
 
         List<int[]> blocks = removableBlocks(this.worldObj);
         for (int[] pos : blocks)
