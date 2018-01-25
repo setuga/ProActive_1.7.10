@@ -35,7 +35,7 @@ abstract class EntityProActiveBase extends EntityThrowable
         int maxy = 256;
         int minz = MathHelper.floor_double(this.posZ) - 8;
         int miny = MathHelper.floor_double(min_d);
-        List list = new ArrayList();
+        List<int[]> list = new ArrayList<>();
         for (int x = minx; x < minx + 16; x++)
         {
             for (int y = miny; y < maxy; y++)
