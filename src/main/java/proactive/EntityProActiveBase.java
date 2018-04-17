@@ -86,7 +86,7 @@ abstract class EntityProActiveBase extends EntityThrowable
             {
                 if (!player.theItemInWorldManager.tryHarvestBlock(x, y, z))
                 {
-                    this.worldObj.setBlockToAir(x, y, z);
+                    this.worldObj.func_147480_a(x, y, z, true);
                 }
             }
         }
